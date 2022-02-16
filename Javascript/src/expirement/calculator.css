@@ -1,0 +1,43 @@
+.center {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Form {
+  width: 20%;
+  height: 40vh;
+  background-color: #fff;
+  box-shadow: 3px 3px 20px rgb(182, 182, 182);
+  position: relative;
+}
+#Form table {
+  width: 100%;
+  height: 100%;
+}
+
+#result {
+  width: 94%;
+  height: 66%;
+  border: 0.5px solid rgb(212, 212, 212);
+  outline: none;
+  padding: 3%;
+  border-radius: 3px;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.eq{
+    background-color: #A6BF4B;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+}

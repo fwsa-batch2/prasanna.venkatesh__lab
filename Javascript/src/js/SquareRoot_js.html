@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Squareroot js</title>
+  </head>
+  <body>
+    <div>
+      <h3>3. JavaScript Program to Find the Square Root</h3>
+      <input type="tel" id="Value" value="0" /> =
+      <input type="tel" id="Reval" value="0" />
+      <button onclick="Value()">Square Root</button>
+    </div>
+
+    <script>
+      function Value() {
+        const a = parseInt(document.getElementById("Value").value);
+        document.getElementById("Reval").value = a ** 0.5;
+      }
+    </script>
+  </body>
+</html>

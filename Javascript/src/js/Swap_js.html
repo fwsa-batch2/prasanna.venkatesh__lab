@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>swap js</title>
+  </head>
+  <body>
+    <div>
+      <h3>4. JavaScript Program to Swap Two Variables</h3>
+      <lable>First value</lable>
+      <input type="tel" id="Valuea" />
+      <lable>second value</lable>
+      <input type="tel" id="Valueb" />
+      <button onclick="swap1()">Swap 1 to 2</button>
+      <p>Result is in document.write</p>
+    </div>
+
+    <script>
+      let Sec1, sec2;
+
+      Sec1 = document.getElementById("Valuea");
+      sec2 = document.getElementById("Valueb");
+
+      [Sec1, sec2] = [sec2, Sec1];
+
+      function swap1() {
+        document.write(
+          "first value " + Sec1.value + " second value " + sec2.value
+        );
+      }
+    </script>
+  </body>
+</html>

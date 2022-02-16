@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./calculator.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form id="Form">
+        <table>
+          <tr>
+            <th colspan="5">
+              <input type="text" id="result" placeholder="0" />
+            </th>
+          </tr>
+          <tr>
+            <th><button onclick="Cal(1)">1</button></th>
+            <th><button onclick="Cal(2)">2</button></th>
+            <th><button onclick="Cal(3)">3</button></th>
+            <th colspan="2"><button class="eq" onclick="Add()">=</button></th>
+          </tr>
+          <tr>
+            <th><button onclick="Cal(4)">4</button></th>
+            <th><button onclick="Cal(5)">5</button></th>
+            <th><button onclick="Cal(6)">6</button></th>
+            <th colspan="2"><button onclick="Cal('+')">+</button></th>
+          </tr>
+          <tr>
+            <th><button onclick="Cal(7)">7</button></th>
+            <th><button onclick="Cal(8)">8</button></th>
+            <th><button onclick="Cal(9)">9</button></th>
+            <th colspan="2"><button onclick="Cal('-')">-</button></th>
+          </tr>
+          <tr>
+            <th><button type="reset">c</button></th>
+            <th><button onclick="Cal(0)">0</button></th>
+            <th><button onclick="Cal('.')">.</button></th>
+            <th><button onclick="Cal('/')">/</button></th>
+            <th><button onclick="Cal('*')">*</button></th>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
+l

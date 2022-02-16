@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prime Number js</title>
+  </head>
+  <body>
+    <div>
+      <h3>8. JavaScript Program to Check Prime Number</h3>
+      <input id="Number" type="text" value="0" />
+      <button onclick="Prime1()">Check</button>
+      <p>Result is in console.log</p>
+    </div>
+
+    <script>
+      function Prime1() {
+        let p = parseInt(document.getElementById("Number").value);
+
+        let s = 0;
+
+        for (let d = 1; d <= p; d++) { // when my input in 10 it takes 1 to 10 valus
+          if (p % d == 0) { // 10/1=0 10/2=0 10/3=1 10/4=2 10/5=0 10/6=4 10/7=3 10/8=2 10/9=1 10/10=0
+            s++;
+          }
+          console.log(s);   
+        }
+        
+        if (s == 2) {
+          console.log(p + " is a prime number");
+        } else {
+          console.log(p + " is not a prime number");
+        }
+      }
+    </script>
+  </body>
+</html>

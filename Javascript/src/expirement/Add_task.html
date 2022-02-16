@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Note App</title>
+    <style>
+      .Ul_tag li {
+        list-style: none;
+      }
+
+      .Li_tag {
+        color: #000;
+        font-size: 1.3vw;
+      }
+
+      #Form {
+        width: 40%;
+        position: relative;
+        margin-top: 20%;
+        margin-left: 30%;
+      }
+      .Ans {
+        position: absolute;
+        bottom: 12%;
+        left: 5%;
+        font-size: 1.5vw;
+      }
+      #Cal {
+        background-color: #a6bf4b;
+        padding: 1.5% 3.5%;
+        margin-right: 2%;
+        outline-style: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #Cal1{
+        background-color: #a6bf4b;
+        padding: 1.5% 3.5%;
+        outline-style: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type='text'] {
+        width: 92%;
+        margin-bottom: 2%;
+        margin-left: 3%;
+        margin-top: 2%;
+        padding: 1%;
+        border: 1px solid gray;
+        outline-style: none;
+      }
+      #select {
+        margin-left: 3%;
+        width: 94.5%;
+        padding: 1%;
+      }
+      .Pra{
+        overflow-x: auto; 
+      }
+    </style>
+  </head>
+  <body>
+      <form id="Form" onsubmit="submitForm()">
+        <div>
+          <input
+            type="text"
+            id="Input"
+            placeholder="Enter Task here.."
+            required
+          />
+        </div>
+        <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+          <button id="Cal" type="submit">Add Task</button>
+          <button id="Cal1" type="button" onclick="del()">Delete</button>
+          <button id="Cal1" type="button" onclick="erras()">Delete</button>
+        </div>
+        <div>
+          <div  class="Pra" style="width:93%; height: 30vh;">
+            <ul id="Ul_tag">
+              
+            </ul>
+          </div>
+
+        </div>
+      </form>
+
+    <script src="./Add_task.js"></script>
+  </body>
+</html>

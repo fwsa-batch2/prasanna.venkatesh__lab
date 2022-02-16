@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator js</title>
+  </head>
+  <body>
+    <div>
+      <h3>11. JavaScript Program to Make a Simple Calculator</h3>
+      <div class="cal">
+        <table class="Table">
+          <tr>
+            <th colspan="5">
+              <lable>First Value</lable>
+              <br />
+              <input id="val1" type="text"/>
+            </th>
+            <th>
+              <lable>Second Value</lable>
+              <br />
+              <input id="val2" type="text"/>
+            </th>
+            <th>=</th>
+            <th>
+              <lable>Result</lable>
+              <br />
+              <input id="val3" type="text"/>
+            </th>
+          </tr>
+        </table>
+        <div class="but">
+          <button onclick="Plus()">+</button>
+          <button onclick="minus()">-</button>
+          <button onclick="div()">/</button>
+          <button onclick="mul()">*</button>
+          <button onclick="re()">%</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function Plus() {
+       const val1 = document.getElementById('val1');
+       const val2 = document.getElementById('val2');
+        
+        document.getElementById('val3').value = +val1.value + +val2.value;
+      }
+
+      function minus() {
+       const val1 = document.getElementById('val1');
+       const val2 = document.getElementById('val2');
+        document.getElementById('val3').value = +val1.value - +val2.value;
+      }
+
+      function div() {
+       const val1 = document.getElementById('val1');
+       const val2 = document.getElementById('val2');
+        document.getElementById('val3').value = +val1.value / +val2.value;
+      }
+
+      function mul() {
+       const val1 = document.getElementById('val1');
+       const val2 = document.getElementById('val2');
+        document.getElementById('val3').value = +val1.value * +val2.value;
+      }
+
+      function re() {
+       const val1 = document.getElementById('val1');
+       const val2 = document.getElementById('val2');
+        document.getElementById('val3').value = +val1.value % +val2.value;
+      }
+    </script>
+  </body>
+</html>

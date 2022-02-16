@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fibonacci js</title>
+  </head>
+  <body>
+    <h3>10. JavaScript Program to Print the Fibonacci Sequence</h3>
+    <input type="text" id="Fibonacci">
+    <button onclick="Fibonacci1()">Check</button>
+    <p>Result is in console.log</p>
+</div>
+
+    <script>
+      function Fibonacci1(){
+      const number = parseInt(document.getElementById("Fibonacci").value);
+      let p1 = 0, p2 = 1, Prasanna;
+
+for (let i = 1; i <= number; i++) {
+    console.log(p1);
+    Prasanna = p1 + p2;
+    p1 = p2;
+    p2 = Prasanna;
+}
+}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h3>
+      7. JavaScript Program to Merge Two Arrays and Remove Duplicate Items
+    </h3>
+
+    <script>
+      let Name1 = [
+        "Prasanna",
+        "Vimal",
+        "Kaushick",
+        "deepak",
+        "Aswath",
+        "Aswath",
+      ]; //index start with 0
+
+      let Name2 = ["haiden", "Suguram", "Aswath", "Prasanna"];
+
+      let Name3 = [...Name1, ...Name2]; //merge
+
+      let Name4 = [...new Set(Name3)];
+
+      document.write(Name4  );
+    </script>
+  </body>
+</html>

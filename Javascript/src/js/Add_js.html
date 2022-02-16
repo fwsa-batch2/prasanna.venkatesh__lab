@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add js</title>
+  </head>
+  <body>
+    <div>
+      <h3>2. JavaScript Program to Add Two Numbers</h3>
+      <form>
+        <input id="firstnum" type="text" value="0" /> +
+        <input id="secnum" type="text" value="0" /> =
+        <input id="output" type="text" value="0" />
+      </form>
+      <button onclick="Myadd()">Result</button>
+    </div>
+    <script>
+      function Myadd() {
+        let First = parseInt(document.getElementById("firstnum").value);
+        let second = parseInt(document.getElementById("secnum").value);
+        document.getElementById("output").value = First + second;
+      }
+    </script>
+  </body>
+</html>
