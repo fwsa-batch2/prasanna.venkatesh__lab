@@ -645,5 +645,5 @@ DROP INDEX NameIndex ON markclass_A;
 #ORDER BY
 
 ```syntax
-select * from table_name order by name ASC;
+select * from markclass_A ORDER BY Name ASC;
 ```
