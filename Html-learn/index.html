@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML</title>
+
+    <style>
+
+        body{
+            background-color: #00153d;
+            color: #F2C777;
+        }
+ 
+        hr{
+            border-color: #D9A25F;
+        }
+
+        code{
+            color: #D9A25F;
+        }
+        
+        span{
+            color: #73afbe;
+        }
+
+        div{
+            background-color: #051026;
+            padding: 4%;
+            width: 92%;
+        }
+
+        p{
+            color: #F2C777;
+        }
+
+        .Quize{
+            position: absolute;
+            top: 7%;
+            right: 2%;
+            width: 7%;
+            height: 4%;
+            border-radius: 100px;
+            background-color: #D9A25F;
+            border: 0px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body style="padding: 2%; margin: 0;">
+    <h1>HTML BASIC TAGS</h1> <button class="Quize">Quize</button>
+
+    <hr>
+
+    <p>if we mention the <span>DOCTYPE</span> means we use html5</p>
+    <div>
+        <code>&lt;!DOCTYPE html&gt;</code>
+    </div>
+
+    <p><span>Lang</span> means language <span>en</span> means english we tell the html we use language english</p>
+    <div>
+        <code>&lt;html lang="en"&gt;    &lt;/html&gt;</code>
+    </div>
+
+    <p><span>head</span> tag contains documents behaviour tags</p>
+    <div>
+        <code>< head > < / head ></code>
+    </div>
+
+    <p><span>title</span> tag is nothing but if we want mention our website name in the tab of our seach engine means we use the title tag</p>
+    <div>
+        <code>< title > < / title ></code>
+    </div>
+
+    <p><span>body</span> tag is nothing but what are contend we want to show our website viewers that all contents are place inside the body tag</p>
+    <div>
+        <code>< body > < / body ></code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+    <code>
+        < !DOCTYPE html ><br><br>
+        < html lang="en" ><br><br>
+        &nbsp;&nbsp;&nbsp;< head ><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< title > < / title ><br><br>
+        &nbsp;&nbsp;&nbsp;< / head ><br><br>
+        &nbsp;&nbsp;&nbsp;< body ><br><br>
+        &nbsp;&nbsp;&nbsp;< /body ><br><br>
+        < / html >
+    </code>
+    </div>
+
+    <h1>META TAGS</h1>
+ 
+    <hr>
+
+    <p> this meta <span>charset="UTF-8"</span> char means character set means set UTF means <span>unicode transformation formate</span> 8 means 8bits uses of this tag is it supports multipul languages and we meantion 8 it supports <span>256 combinations</span></p>
+    <div>
+        <code>< meta charset="UTF-8" ></code>
+    </div>
+
+    <p><span>viewport</span> is for change our site responsive</p>
+    <div>
+        <code>< meta name="viewport" content="width=device-width, initial-scale=1.0" ></code>
+    </div>
+
+    <p>this meta tag is use for <span>describe</span> your website in tha seach engin the seach engins supports only <span>250 characters</span></p>
+    <div>
+        <code>< meta name="discription" content="" ></code>
+    </div>
+
+    <p>this meta tag is use for give <span>keywords</span> for your website in tha seach engine</p>
+    <div>
+        <code>< meta name="keywords" content="" ></code>
+    </div>
+
+    <p>this meta tag for mention <span>name of your website builder</span> it shows in the seach engine</p>
+    <div>
+        <code>< meta name="author" content="" ></code>
+    </div>
+
+    <p>this meta tag <span>auto redirect</span> your website</p>
+    <div>
+        <code>< meta http-equiv="refresh" content="0; url=https://www.freshworks.com/ " ></code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+    <code>
+        < head ><br><br>
+        &nbsp;&nbsp;&nbsp;< meta charset="UTF-8" ><br><br>
+        &nbsp;&nbsp;&nbsp;< meta name="viewport" content="width=device-width, initial-scale=1.0" ><br><br>
+        &nbsp;&nbsp;&nbsp;< meta name="discription" content="" ><br><br>
+        &nbsp;&nbsp;&nbsp;< meta name="keywords" content="" ><br><br>
+        &nbsp;&nbsp;&nbsp;< meta name="author" content="" ><br><br>
+        &nbsp;&nbsp;&nbsp;< meta http-equiv="refresh" content="0; url=https://www.freshworks.com/ " ><br><br>
+        < / head >
+    </code>
+    </div>
+
+    <h1>HTML LAYOUT</h1>
+
+    <hr>
+
+    <p><span>header</span> Defines a header for a document or a section</p>
+    <div>
+        <code>< header > < / header ></code>
+    </div>
+
+    <p><span>nav</span> Defines a set of navigation links</p>
+    <div>
+        <code>< nav > < / nav ></code>
+    </div>
+
+    <p><span>section</span>  Defines a section in a document</p>
+    <div>
+        <code>< section > < / section ></code>
+    </div>
+
+    <p><span>article</span> Defines an independent, self-contained content</p>
+    <div>
+        <code>< artical > < / artical ></code>
+    </div>
+
+    <p><span>aside</span>  Defines content aside from the content (like a sidebar)</p>
+    <div>
+        <code>< aside > < / aside ></code>
+    </div>
+
+    <p><span>footer</span>  Defines a footer for a document or a section</p>
+    <div>
+        <code>< footer > < / footer ></code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+    <code>
+        <img src="./Assets/img_sem_elements.gif" style="margin-left: 10%;">
+    </code>
+    </div>
+
+    <h1>HTML HEADING TAGS</h1>
+
+    <hr>
+
+    <p>The <span>h1</span> to <span>h6</span> tags are used to define <span>HTML headings</span>. <span>h1</span> defines the most important heading. <span>h6</span> defines the least important heading.</p>
+    <div>
+        <code>
+            < h1 > size 2em<br><br>
+            < h2 > size 1.5em<br><br>
+            < h3 > size 1.17em<br><br>
+            < h4 > size 1em<br><br>
+            < h5 > size 0.8em<br><br>
+            < h6 > size 0.7em
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <h1>h1 Example size 2em</h1>
+            <h2>h2 Example size 1.5em</h2>
+            <h3>h3 Example size 1.17em</h3>
+            <h4>h4 Example size 1em</h4>
+            <h5>h5 Example size 0.8em</h5>
+            <h6>h6 Example size 0.7em</h6>
+        </code>
+    </div>
+
+    <h1>HTML LINK TAG</h1>
+
+    <hr>
+
+    <p>The <span>a</span> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <span>a</span> element is the <span>href</span> attribute, which indicates the link's destination</p>
+    <div>
+        <code>
+          < a href = " https : / / www . freshworks.com / " > link tag < / a >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <a href="https://www.freshworks.com/">Link tag</a>
+        </code>
+    </div>
+
+    <h1>HTML ARTICLE TAG</h1>
+
+    <hr>
+
+    <p>The <span>article</span> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site</p>
+    <div>
+        <code>
+            < article ><br><br>
+            &nbsp;&nbsp;&nbsp;< h2 > Microsoft Edge < / h2 ><br><br>
+            &nbsp;&nbsp;&nbsp;< p > Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer. < / p ><br><br>
+            < / article >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <article>
+                <h2>Microsoft Edge</h2>
+                <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+            </article>
+        </code>
+    </div>
+
+    <h1>HTML AUDIO TAG</h1>
+
+    <hr>
+
+    <p>The <span>audio</span> tag contains one or more <span>source</span> tags with different audio sources. The browser will choose the first source it supports</p>
+    <div>
+        <code>
+          < audio  controls > < source src = " " type = " audio / mp3 "> < / audio >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <audio controls>
+                <source src=" " type="audio/ ">
+            </audio>
+        </code>
+    </div>
+
+    <h1>HTML BOLD TAG</h1>
+
+    <hr>
+
+    <p>The <span>b</span> tag specifies bold text without any extra importance</p>
+    <div>
+        <code>
+            < p > The b tag specifies < b > bold < / b > text without any extra importance < / p >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <p>The b tag specifies <b>bold</b> text without any extra importance</p>
+        </code>
+    </div>
+
+    <h1>HTML LINE BREAK TAG</h1>
+
+    <hr>
+
+    <p>The <span>br</span> tag inserts a single line break</p>
+    <div>
+        <code>
+            < p > tag inserts < br > a single < br > line break < / p >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <p> tag inserts<br> a single<br> line break </p>
+        </code>
+    </div>
+
+    <h1>HTML BUTTON TAG</h1>
+
+    <hr>
+
+    <p>The <span>Button</span> tag defines a clickable button</p>
+    <div>
+        <code>
+            < button type = " button " > Click Me! < / button >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <button type="button">Click Me!</button>
+        </code>
+    </div>
+
+    <h1>HTML HEADER TAG</h1>
+
+    <hr>
+
+    <p>The <span>header</span> element represents a container for introductory content or a set of navigational links</p>
+    <div>
+        <code>
+            < header > < h1 > Main page heading here < / h1 >< / header >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <header>
+                <h1> Main page heading here </h1>
+            </header>
+        </code>
+    </div>
+
+    <h1>HTML THEMATIC BREAK TAG</h1>
+
+    <hr>
+
+    <p>The <span>hr</span> tag defines a thematic break in an HTML page</p>
+    <div>
+        <code>
+            < hr >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <header>
+                <h1>Thimantic break</h1>
+                <hr>
+            </header>
+        </code>
+    </div>
+
+    <h1>HTML ITALIC TAG</h1>
+
+    <hr>
+
+    <p>The <span>i</span> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
+    <div>
+        <code>
+            < p >inside is typically displayed in < i > italic < / i > < / p >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <p>inside is typically displayed in <i>italic</i></p>
+        </code>
+    </div>
+
+    <h1>HTML IFRAME TAG</h1>
+
+    <hr>
+
+    <p>The <span>iframe</span> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document.</p>
+    <div>
+        <code>
+            < iframe width = " 560 " height = " 315 " src = " https : / / www . youtube . com / embed / 5dJmua4ykdA " >< / iframe > 
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5dJmua4ykdA"></iframe>
+        </code>
+    </div>
+
+    <h1>HTML IMAGE TAG</h1>
+
+    <hr>
+
+    <p>The <span>iframe</span> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document.</p>
+    <div>
+        <code>
+            < img src = " . / Assets / pexels - pixabay - 349758 . jpg " alt = " Girl in a jacket " width = " 700 " height = " 400 " >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <img src="./Assets/pexels-pixabay-349758.jpg" alt="Girl in a jacket" width="700" height="400">
+        </code>
+    </div>
+
+    <h1>HTML NAV TAG</h1>
+
+    <hr>
+
+    <p>The <span>nav</span> tag defines a set of navigation links.</p>
+    <div>
+        <code>
+            < nav ><br><br>
+            &nbsp;&nbsp;&nbsp;< a href = " # " > HTML < / a > |<br><br>
+            &nbsp;&nbsp;&nbsp;< a href = " # " > CSS < / a > |<br><br>
+            &nbsp;&nbsp;&nbsp;< a href = " # " > JavaScript < / a > |<br><br>
+            &nbsp;&nbsp;&nbsp;< a href = " # " > Python < / a ><br><br>
+            < / nav >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <nav>
+                <a href="#">HTML</a> |
+                <a href="#">CSS</a> |
+                <a href="#">JavaScript</a> |
+                <a href="#">Python</a>
+            </nav>
+        </code>
+    </div>
+
+    <h1>HTML PARAHRAPH TAG</h1>
+
+    <hr>
+
+    <p>The <span>p</span> tag defines a paragraph. Browsers automatically add a single blank line before and after each</p>
+    <div>
+        <code>
+          < p > < / p >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <p>The tag defines a paragraph. Browsers automatically add a single blank line before and after each</p>
+        </code>
+    </div>
+
+    <h1>HTML SECTION TAG</h1>
+
+    <hr>
+
+    <p>The <span>section</span> tag defines a section in a document.</p>
+    <div>
+        <code>
+            < section ><br><br>
+            &nbsp;&nbsp;&nbsp;< h2 > section 1 < / h2 ><br><br>
+            &nbsp;&nbsp;&nbsp;< p > tag defines a section in a document. < / p ><br><br>
+            < / section ><br><br><br>
+            < section ><br><br>
+            &nbsp;&nbsp;&nbsp;< h2 > section 2 < / h2 ><br><br>
+            &nbsp;&nbsp;&nbsp;< p > tag defines a section in a document. < / p ><br><br>
+            < / section >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <section>
+                <h2>section 1</h2>
+                <p>tag defines a section in a document.</p>
+            </section>
+              
+            <section>
+                <h2>section 2</h2>
+                <p>tag defines a section in a document.</p>
+            </section>
+        </code>
+    </div>
+
+
+    <h1>HTML UNARTICULATED TAG</h1>
+
+    <hr>
+
+    <p>The <span>u</span> tag represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text</p>
+    <div>
+        <code>
+            < p > The u tag represents some text that is < u > unarticulated < / u > < / p >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <p> The u tag represents some text that is <u>unarticulated</u></p>
+        </code>
+    </div>
+
+    <h1>HTML VIDEO TAG</h1>
+
+    <hr>
+
+    <p>The <span>video</span> tag is used to embed video content in a document, such as a movie clip or other video streams</p>
+    <div>
+        <code>
+            < video width = " 320 " height = " 240 " controls ><br><br>
+            &nbsp;&nbsp;&nbsp;< source src = " " type = " video / mp4 " ><br><br>
+            < / video >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <video width="320" height="240" controls>
+                <source src=" " type="video/mp4">
+            </video>
+        </code>
+    </div>
+    
+
+    <h1>HTML LIST TAG</h1>
+
+    <hr>
+
+    <p>The <span>li</span> tag defines a list item</p>
+    <div>
+        <code>
+            < li > < / li >
+        </code>
+    </div>
+
+
+    <h1>HTML DESCRIBE TAG</h1>
+
+    <hr>
+
+    <p>The <span>dd</span> tag is used to describe a term/name in a description list</p>
+    <div>
+        <code>
+            < dd > < / dd >
+        </code>
+    </div>
+
+
+    <h1>HTML DEFINDES TAG</h1>
+
+    <hr>
+
+    <p>The <span>dt</span> tag defines a term/name in a description list.
+
+    </p>
+    <div>
+        <code>
+            < dt > < / dt >
+        </code>
+    </div>
+
+    <h1>HTML DISCRIBTION TAG</h1>
+
+    <hr>
+
+    <p>The <span>dl</span> tag defines the description list</p>
+    <div>
+        <code>
+            < dl ><br><br>
+            &nbsp;&nbsp;&nbsp;< dt > Coffee < / dt ><br><br>
+            &nbsp;&nbsp;&nbsp;< dd > Black hot drink < / dd ><br><br>
+            &nbsp;&nbsp;&nbsp;< dt > Milk < / dt ><br><br>
+            &nbsp;&nbsp;&nbsp;< dd > White cold drink < / dd ><br><br>
+            < / dl >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </code>
+    </div>
+
+    <h1>HTML ORDERLIST TAG</h1>
+
+    <hr>
+
+    <p>The <span>ol</span> tag defines an ordered list. An ordered list can be numerical or alphabetical.</p>
+    <div>
+        <code>
+            < ol ><br><br>
+            &nbsp;&nbsp;&nbsp;< li > Coffee < / li ><br><br>
+            &nbsp;&nbsp;&nbsp;< li > Tea < / li ><br><br>
+            &nbsp;&nbsp;&nbsp;< li > Milk < / li ><br><br>
+            < / ol >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+        </code>
+    </div>
+
+    <h1>HTML UNORDERLIST TAG</h1>
+
+    <hr>
+
+    <p>The <span>ul</span> tag defines an unordered (bulleted) list</p>
+    <div>
+        <code>
+            < ul ><br><br>
+            &nbsp;&nbsp;&nbsp;< li > Coffee < / li ><br><br>
+            &nbsp;&nbsp;&nbsp;< li > Tea < / li ><br><br>
+            &nbsp;&nbsp;&nbsp;< li > Milk < / li ><br><br>
+            < / ul >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </code>
+    </div>
+
+    <h1>HTML CAPTION TAG</h1>
+
+    <hr>
+
+    <p>The <span>caption</span> tag defines a table caption</p>
+    <div>
+        <code>
+            < caption > < / caption >
+        </code>
+    </div>
+
+    <h1>HTML TABLE ROW TAG</h1>
+
+    <hr>
+
+    <p>The <span>tr</span> tag defines a row in an HTML table.</p>
+    <div>
+        <code>
+            < tr > < / tr >
+        </code>
+    </div>
+
+    <h1>HTML TABLE HEADER TAG</h1>
+
+    <hr>
+
+    <p>The <span>th</span> tag defines a header cell in an HTML table./p>
+    <div>
+        <code>
+            < th > < / th >
+        </code>
+    </div>
+
+    <h1>HTML TABLE DATA TAG</h1>
+
+    <hr>
+
+    <p>The <span>td</span> tag defines a standard data cell in an HTML table.</p>
+    <div>
+        <code>
+            < td > < / td >
+        </code>
+    </div>
+
+    <h1>HTML TABLE TAG</h1>
+
+    <hr>
+
+    <p>The <span>table</span> tag defines an HTML table</p>
+    <div>
+        <code>
+            < table ><br><br>
+                &nbsp;&nbsp;&nbsp;< caption > Save Money < / caption ><br><br>
+                &nbsp;&nbsp;&nbsp;< tr ><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< th > Month < / th ><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< th > Savings < / th ><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< / tr ><br><br>
+                &nbsp;&nbsp;&nbsp;< tr ><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< td > January < / td ><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< td > $100 < / td ><br><br>
+                &nbsp;&nbsp;&nbsp;< / tr ><br><br>
+            < / table >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <table border="1px">
+                <caption>Save Money</caption>
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+              <td>$100</td>
+            </tr>
+          </table>
+        </code>
+    </div>
+
+    <h1>HTML FORM TAG</h1>
+
+    <hr>
+
+    <p>The <span>form</span> tag is used to create an HTML form for user input.</p>
+    <div>
+        <code>
+            < form > < / form >
+        </code>
+    </div>
+
+    <h1>HTML LABLE TAG</h1>
+
+    <hr>
+
+    <p>The <span>lable</span> tag defines a label for many form elements</p>
+    <div>
+        <code>
+            < lable > < / lable >
+        </code>
+    </div>
+
+    <h1>HTML INPUT TYPES</h1>
+
+    <hr>
+
+    <p>The <span>input</span> tag specifies an input field where the user can enter data.</p>
+    <div>
+        <code>
+            < input type = " text " > <br><br>
+            < input type = " radio " > <br><br>
+            < input type = " checkbox " > <br><br>
+            < input type = " date " > <br><br>
+            < input type = " password " ><br><br>
+            < input type = " tel " ><br><br>
+            < input type = " number " ><br><br>
+            < input type = " time " ><br><br>
+            < input type = " range " ><br><br>
+            < input type = " reset " ><br><br>
+            < input type = " seach " ><br><br>
+            < input type = " datetime-local " ><br><br>
+            < input type = " submit " ><br><br>
+            < input type = " email " ><br><br>
+            < input type = " color " ><br><br>
+            < input type = " file " ><br><br>
+            < input type = " button " ><br><br>
+        </code>
+    </div>
+
+    <h1>HTML INPUT EXAMPLE</h1>
+
+    <hr>
+
+    <p>input type <span>text</span></p>
+    <div>
+        <code>
+            <input type="text">
+        </code>
+    </div>
+
+    <p>input type <span>radio</span></p>
+    <div>
+        <code>
+            <input type="radio">
+        </code>
+    </div>
+
+    <p>input type <span>checkbox</span></p>
+    <div>
+        <code>
+            <input type="checkbox">
+        </code>
+    </div>
+
+    <p>input type <span>date</span></p>
+    <div>
+        <code>
+            <input type="date">
+        </code>
+    </div>
+
+    <p>input type <span>password</span></p>
+    <div>
+        <code>
+            <input type="password">
+        </code>
+    </div>
+
+    <p>input type <span>tel</span></p>
+    <div>
+        <code>
+            <input type="tel">
+        </code>
+    </div>
+
+    <p>input type <span>number</span></p>
+    <div>
+        <code>
+            <input type="number">
+        </code>
+    </div>
+
+    <p>input type <span>range</span></p>
+    <div>
+        <code>
+            <input type="range">
+        </code>
+    </div>
+
+    <p>input type <span>reset</span></p>
+    <div>
+        <code>
+            <input type="reset">
+        </code>
+    </div>
+
+    <p>input type <span>search</span></p>
+    <div>
+        <code>
+            <input type="search">
+        </code>
+    </div>
+
+    <p>input type <span>datetime</span></p>
+    <div>
+        <code>
+            <input type="datetime">
+        </code>
+    </div>
+
+    <p>input type <span>datetime-local</span></p>
+    <div>
+        <code>
+            <input type="datetime-local">
+        </code>
+    </div>
+
+    <p>input type <span>submit</span></p>
+    <div>
+        <code>
+            <input type="submit">
+        </code>
+    </div>
+
+    <p>input type <span>email</span></p>
+    <div>
+        <code>
+            <input type="email">
+        </code>
+    </div>
+
+    <p>input type <span>color</span></p>
+    <div>
+        <code>
+            <input type="color">
+        </code>
+    </div>
+
+    <p>input type <span>file</span></p>
+    <div>
+        <code>
+            <input type="file">
+        </code>
+    </div>
+
+    <p>input type <span>button</span></p>
+    <div>
+        <code>
+            <input type="button">
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <select>
+                <option value="Coffee">Coffee</option>
+                <option value="tea">Tea</option>
+                <option value="milk">Milk</option>
+            </select>
+        </code>
+    </div>
+
+    <h1>HTML SELECT TAG</h1>
+
+    <hr>
+
+    <p>The <span>select</span> element is used to create a drop-down list.</p>
+    <div>
+        <code>
+           < select ><br><br>
+           &nbsp;&nbsp;&nbsp;< option value = " Coffee " > Coffee < / option ><br><br>
+           &nbsp;&nbsp;&nbsp;< option value =" tea " > Tea < / option ><br><br>
+           &nbsp;&nbsp;&nbsp;< option value = " milk " > Milk < / option ><br><br>
+           < / select >
+        </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <select>
+                <option value="Coffee">Coffee</option>
+                <option value="tea">Tea</option>
+                <option value="milk">Milk</option>
+            </select>
+        </code>
+    </div>
+
+    <h1>HTML DATALIST TAG</h1>
+
+    <hr>
+
+    <p>The <span>datalist</span> tag specifies a list of pre-defined options for an input element</p>
+    <div>
+        <code>
+            < input list = " datalist " ><br><br>
+            < datalist id = " datalist " ><br><br>
+            &nbsp;&nbsp;&nbsp;< option value = " Coffee " > Coffee < / option ><br><br>
+            &nbsp;&nbsp;&nbsp;< option value =" tea " > Tea < / option ><br><br>
+            &nbsp;&nbsp;&nbsp;< option value = " milk " > Milk < / option ><br><br>
+            < / datalist >
+         </code>
+    </div>
+
+    <p>Example :</p>
+    <div class="example">
+        <code>
+            <input list="datalist">
+            <datalist id="datalist">
+                <option value="Coffee">
+                <option value="tea">
+                <option value="milk">
+            </datalist>
+        </code>
+    </div>
+</body>
+</html>
