@@ -629,3 +629,19 @@ SELECT * FROM markclass_A CROSS JOIN markclass_B WHERE markclass_A.Mark = markcl
 
 ###### 1 row in set (0.00 sec)
 * * *
+#Indexing
+
+```syntax
+CREATE INDEX NameIndex ON markclass_A(Name);
+```
+
+```syntax
+DROP INDEX NameIndex ON markclass_A;
+```
+
+* * *
+#ORDER BY
+
+```syntax
+select * from table_name order by name ASC;
+```
