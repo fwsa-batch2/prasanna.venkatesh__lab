@@ -165,11 +165,14 @@ SELECT COUNT(status),class FROM student_class WHERE student_class.status = 'ACTI
 |             2 |     1 |
 |             2 |     6 |
 
-### Feature 13: Display student and class details Using Joins (Inner Join)
+### Feature 13: Display student and class details Using Joins Using (Inner Join) and (Scalar SubQuery)
+
+#### Inner Join
 
 ```syntax
 SELECT * FROM students INNER JOIN student_class ON students.id = student_class.student_id;
 ```
+
 
 | id | name     | email                   | mobile_no | password      | gender | dob        | created_date        | id | student_id | class | status   |
 |:---|:---------|:------------------------|:----------|:--------------|:-------|:-----------|:--------------------|:---|:-----------|:------|:---------|
@@ -178,6 +181,21 @@ SELECT * FROM students INNER JOIN student_class ON students.id = student_class.s
 |  3 | vimal    | vimal@freshclass.com    | 123456890 | Vimal@2022    | M      | NULL       | 2022-03-01 18:26:43 |  3 |          3 |     2 | INACTIVE |
 |  4 | Aswath   | aswath@freshclass.com   | 123456890 | Aswath@2022   | M      | 2001-01-20 | 2022-03-01 18:26:43 |  4 |          4 |     6 | ACTIVE   |
 |  5 | Kaushik  | kaushik@freshclass.com  | 123456890 | Kaushik@2022  | M      | NULL       | 2022-03-01 18:26:43 |  5 |          5 |     6 | ACTIVE   |
+
+#### Scalar SubQuery
+
+
+```syntax
+SELECT *, (select student_class.class from student_class WHERE student_class.student_id = students.id) as class from students;
+```
+
+| id | name     | email                   | mobile_no | password      | gender | dob        | created_date        | class |
+|:---|:---------|:------------------------|:----------|:--------------|:-------|:-----------|:--------------------|:------|
+|  1 | Prasanna | prasanna@freshclass.com | 123456890 | Prasanna@2022 | M      | 2001-01-20 | 2022-03-01 18:26:43 |     1 |
+|  2 | Haiden   | haiden@freshclass.com   | 123456890 | Haiden@2022   | M      | 2001-01-20 | 2022-03-01 18:26:43 |     1 |
+|  3 | vimal    | vimal@freshclass.com    | 123456890 | Vimal@2022    | M      | NULL       | 2022-03-01 18:26:43 |     2 |
+|  4 | Aswath   | aswath@freshclass.com   | 123456890 | Aswath@2022   | M      | 2001-01-20 | 2022-03-01 18:26:43 |     6 |
+|  5 | Kaushik  | kaushik@freshclass.com  | 123456890 | Kaushik@2022  | M      | NULL       | 2022-03-01 18:26:43 |     6 |
 
 ### Feature 14: Display Student Details for the given input Class : 6th Standard Using Joins
 
