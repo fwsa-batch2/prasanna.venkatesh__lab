@@ -1,4 +1,4 @@
-#ORDER BY
+# ORDER BY
 
 ```syntax
 select * from table_name order by name ASC;
