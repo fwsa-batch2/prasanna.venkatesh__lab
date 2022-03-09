@@ -95,7 +95,7 @@ DESC foreignkey;
 ```syntax
 SELECT * FROM foreignkey;
 ```
-| studId | mark | PersonId |
+| studId | mark | Id |
 |:-------|:-----|:---------|
 |      1 |  100 |        1 |
 
