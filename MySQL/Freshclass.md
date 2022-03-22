@@ -108,8 +108,8 @@ INSERT INTO Coaches(Id,User_id,Dept,Qualification,Position) VALUES(4,'E0002','L&
 
 | Id | User_id | Dept | Qualification | Position        |
 |:---|:--------|:-----|:--------------|:----------------|
-|  2 | E0001   | Tech | 12th          | Head tech coach |
-|  4 | E0002   | L&D  | 12th          | Head coach      |
+|  2 | E0001   | Tech | MCA           | Head tech coach |
+|  4 | E0002   | L&D  | B.E           | Head coach      |
 
 ### CREATE TABLE Attendance
 
