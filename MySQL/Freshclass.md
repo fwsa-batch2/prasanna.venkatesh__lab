@@ -4,6 +4,9 @@
 CREATE DATABASE freshclass;
 ```
 
+## ER Diagrom
+![Screenshot (162)](https://user-images.githubusercontent.com/83388298/159399596-9b5328ff-a27c-4c10-a17a-149282a09cc1.jpg)
+
 ## CREATE TABLE User
 
 ```sql
