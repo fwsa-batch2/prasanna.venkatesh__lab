@@ -4,6 +4,11 @@
 CREATE DATABASE freshclass;
 ```
 
+## ER Diagrams
+![Screenshot (162)](https://user-images.githubusercontent.com/83388298/159400220-9dd2aeaa-8c9c-4796-b8b6-03c48e56cf2f.jpg)
+![Screenshot (163)](https://user-images.githubusercontent.com/83388298/159401091-e297885a-1b15-4d96-aa11-83f6aebf5bf7.jpg)
+![Screenshot (163) (1)](https://user-images.githubusercontent.com/83388298/159401104-338dc286-32c6-4b30-8453-9ea9998de928.jpg)
+
 ## CREATE TABLE User
 
 ```sql
