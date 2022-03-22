@@ -4,9 +4,6 @@
 CREATE DATABASE freshclass;
 ```
 
-## ER Diagrom
-![Screenshot (162)](https://user-images.githubusercontent.com/83388298/159399596-9b5328ff-a27c-4c10-a17a-149282a09cc1.jpg)
-
 ## CREATE TABLE User
 
 ```sql
@@ -255,41 +252,6 @@ values(1,'A0001',1,'2020-03-20'),
 |    5 | A0004  |          1 | 2020-03-20      | 2022-03-20 08:43:17 |
 |    6 | A0005  |          1 | 2020-03-20      | 2022-03-20 08:43:17 |
 
-### CREATE TABLE Attendance
-
-```sql
-CREATE TABLE Attendance(Id int,
-                        Emp_id char(6) NOT NULL,
-                        Attendance tinyint(1),
-                        Attendance_date date, 
-                        FOREIGN KEY(Id) REFERENCES User(Id));
-```
-
-| Field           | Type       | Null | Key | Default | Extra |
-|:----------------|:-----------|:-----|:----|:--------|:------|
-| Id              | int        | YES  | MUL | NULL    |       |
-| Emp_id          | char(6)    | NO   |     | NULL    |       |
-| Attendance      | tinyint(1) | YES  |     | NULL    |       |
-| Attendance_date | date       | YES  |     | NULL    |       |
-
-### INSERT VALUES INTO Attendance TABLE
-
-```sql
-INSERT INTO Attendance(Id,Emp_id,Attendance,Attendance_date) 
-values(1,'A0001',1,'2020-03-20'),
-      (3,'A0002',0,'2020-03-20'),
-      (4,'A0003',1,'2020-03-20'),
-      (5,'A0004',1,'2020-03-20'),
-      (6,'A0005',1,'2020-03-20');
-```
-
-| Id   | Emp_id | Attendance | Attendance_date | noted_date          |
-|:-----|:-------|:-----------|:----------------|:--------------------|
-|    1 | A0001  |          1 | 2020-03-20      | 2022-03-20 08:43:17 |
-|    3 | A0002  |          0 | 2020-03-20      | 2022-03-20 08:43:17 |
-|    4 | A0003  |          1 | 2020-03-20      | 2022-03-20 08:43:17 |
-|    5 | A0004  |          1 | 2020-03-20      | 2022-03-20 08:43:17 |
-|    6 | A0005  |          1 | 2020-03-20      | 2022-03-20 08:43:17 |
 
 ### CREATE TABLE Assignment
 
