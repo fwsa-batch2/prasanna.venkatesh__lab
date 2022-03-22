@@ -30,7 +30,7 @@ SELECT * FROM foreignkey;
 ### multiple row subquery
 
 ```syntax
- SELECT Email FROM Constraints WHERE Id = (SELECT Id FROM foreignkey WHERE mark < 70);
+ SELECT Email FROM Constraints WHERE Id IN (SELECT Id FROM foreignkey WHERE mark < 70);
 ```
 
 | Email                   |
