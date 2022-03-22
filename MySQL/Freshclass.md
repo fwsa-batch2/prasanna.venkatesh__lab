@@ -297,20 +297,23 @@ VALUES('ELS','ELST2','2020-03-18'),
 ### CREATE TABLE Schedules
 
 ```sql
-CREATE TABLE Assignment(Id int primary key auto_increment, 
-                        Subject_name varchar(100) NOT NULL, 
-                        Ass_name varchar(100) NOT NULL, 
-                        Dead_line date, 
-                        created_date timestamp not null default current_timestamp);
+create table schedules(Id int primary key auto_increment,
+                       Class_name varchar(100) NOT NULL,
+                       Schedule_date date,
+                       Time_in time,
+                       Time_out time,
+                       Scheduled_date timestamp not null default current_timestamp);
 ```
 
-| Field        | Type         | Null | Key | Default           | Extra             |
-|:-------------|:-------------|:-----|:----|:------------------|:------------------|
-| Id           | int          | NO   | PRI | NULL              | auto_increment    |
-| Subject_name | varchar(100) | NO   |     | NULL              |                   |
-| Ass_name     | varchar(100) | NO   |     | NULL              |                   |
-| Dead_line    | date         | YES  |     | NULL              |                   |
-| created_date | timestamp    | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+| Field          | Type         | Null | Key | Default           | Extra             |
+|:----------------|:------------|:-----|:----|:------------------|:------------------|
+| Id             | int          | NO   | PRI | NULL              | auto_increment    |
+| Class_name     | varchar(100) | NO   |     | NULL              |                   |
+| Schedule_date  | date         | YES  |     | NULL              |                   |
+| Time_in        | time         | YES  |     | NULL              |                   |
+| Time_out       | time         | YES  |     | NULL              |                   |
+| Scheduled_date | timestamp    | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+
 
 
 ### INSERT VALUES INTO Schedules TABLE
