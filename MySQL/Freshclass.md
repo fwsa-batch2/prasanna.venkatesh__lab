@@ -94,7 +94,8 @@ CREATE table student_link(Id int,
                           Emp_id char(6) NOT NULL,
                           ithub_link varchar(255), 
                           Slack_link varchar(255),
-                          FOREIGN KEY(Id) REFERENCES User(Id));
+                          FOREIGN KEY(Id) REFERENCES User(Id)
+);
 ```
 
 | Field  | Type    | Null | Key | Default | Extra |
@@ -126,7 +127,8 @@ Values(1,'A0001'),
 ```sql
 CREATE TABLE Coaches(Id int,
                      Emp_id char(6) NOT NULL, 
-                     FOREIGN KEY(Id) REFERENCES User(Id));
+                     FOREIGN KEY(Id) REFERENCES User(Id)
+);
 ```
 
 | Field  | Type    | Null | Key | Default | Extra |
@@ -154,7 +156,8 @@ CREATE table student_link(Id int,
                           Emp_id char(6) NOT NULL,
                           Github_link varchar(255), 
                           Slack_link varchar(255),
-                          FOREIGN KEY(Id) REFERENCES User(Id));
+                          FOREIGN KEY(Id) REFERENCES User(Id)
+);
 ```
 
 | Field       | Type         | Null | Key | Default | Extra |
@@ -191,7 +194,8 @@ CREATE table student_status(Id int,
                             Emp_id char(6) NOT NULL,
                             status varchar(20) NOT NULL,
                             FOREIGN KEY(Id) REFERENCES User(Id),
-                            check (status in ('ACTIVE','INACTIVE')));
+                            check (status in ('ACTIVE','INACTIVE'))
+);
 ```
 
 | Field  | Type        | Null | Key | Default | Extra |
@@ -226,7 +230,8 @@ CREATE TABLE Attendance(Id int,
                         Emp_id char(6) NOT NULL,
                         Attendance tinyint(1),
                         Attendance_date date, 
-                        FOREIGN KEY(Id) REFERENCES User(Id));
+                        FOREIGN KEY(Id) REFERENCES User(Id)
+);
 ```
 
 | Field           | Type       | Null | Key | Default | Extra |
@@ -266,7 +271,8 @@ CREATE TABLE Assignment(Id int primary key auto_increment,
                         Subject_name varchar(100) NOT NULL, 
                         Ass_name varchar(100) NOT NULL, 
                         Dead_line date, 
-                        created_date timestamp not null default current_timestamp);
+                        created_date timestamp not null default current_timestamp
+);
 ```
 
 | Field        | Type         | Null | Key | Default           | Extra             |
@@ -302,7 +308,8 @@ create table schedules(Id int primary key auto_increment,
                        Schedule_date date,
                        Time_in time,
                        Time_out time,
-                       Scheduled_date timestamp not null default current_timestamp);
+                       Scheduled_date timestamp not null default current_timestamp
+);
 ```
 
 | Field          | Type         | Null | Key | Default           | Extra             |
