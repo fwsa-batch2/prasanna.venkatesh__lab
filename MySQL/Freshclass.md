@@ -170,9 +170,6 @@ VALUES('ELS','ELST2','2020-03-18'),
 |  1 | ELS          | ELST2    | 2020-03-18 | 2022-03-20 08:46:40 |
 |  2 | ELS          | ELST3    | 2020-03-21 | 2022-03-20 08:46:40 |
 
-## ER Diagram
-![Screenshot (163) (1)](https://user-images.githubusercontent.com/83388298/159401104-338dc286-32c6-4b30-8453-9ea9998de928.jpg)
-
 ### CREATE TABLE Schedules
 
 ```sql
