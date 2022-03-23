@@ -5,7 +5,7 @@ CREATE DATABASE freshclass;
 ```
 
 ## ER Diagrams
-![Screenshot (162)](https://user-images.githubusercontent.com/83388298/159400220-9dd2aeaa-8c9c-4796-b8b6-03c48e56cf2f.jpg)
+![Freshclass_ERD (2)](https://user-images.githubusercontent.com/83388298/159615401-61a46e13-60fb-46a1-9261-f433986cc058.png)
 
 ## CREATE TABLE User
 
