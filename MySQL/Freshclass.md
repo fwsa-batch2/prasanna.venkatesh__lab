@@ -5,7 +5,8 @@ CREATE DATABASE freshclass;
 ```
 
 ## ER Diagrams
-![Screenshot (162)](https://user-images.githubusercontent.com/83388298/159400220-9dd2aeaa-8c9c-4796-b8b6-03c48e56cf2f.jpg)
+![Freshclass_ERD (2)](https://user-images.githubusercontent.com/83388298/159615401-61a46e13-60fb-46a1-9261-f433986cc058.png)
+![Flowchart (1) (1)](https://user-images.githubusercontent.com/83388298/159616124-41c2ecf1-bdd9-40db-8c03-2ca3b917b76b.png)
 
 ## CREATE TABLE User
 
@@ -166,9 +167,6 @@ o
 |:---|:-------------|:---------|:-----------|:--------------------|
 |  1 | ELS          | ELST2    | 2020-03-18 | 2022-03-20 08:46:40 |
 |  2 | ELS          | ELST3    | 2020-03-21 | 2022-03-20 08:46:40 |
-
-## ER Diagram
-![Screenshot (163) (1)](https://user-images.githubusercontent.com/83388298/159401104-338dc286-32c6-4b30-8453-9ea9998de928.jpg)
 
 ### CREATE TABLE Schedules
 
