@@ -51,7 +51,7 @@ INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Role
 
 ### User table with values
 
-| Id | User_id | First_name | Last_name    | Email                              | Date_of_birth | Gender | Roll    | City        | Phone_no   | Password      | Singup_Date         |
+| Id | User_id | First_name | Last_name    | Email                              | Date_of_birth | Gender | Role    | City        | Phone_no   | Password      | Singup_Date         |
 |:---|:--------|:-----------|:-------------|:-----------------------------------|:--------------|:-------|:--------|:------------|:-----------|:--------------|:--------------------|
 |  1 | A0001   | Prasanna   | Venkatesh    | prasanna.vanekatesh@freshclass.com | 2001-01-20    | Male   | Student | Thanjevur   | 9791836225 | Prasanna@2022 | 2022-03-22 16:22:44 |
 |  2 | E0001   | Chitra     | Muthukumaran | chirta.muthukumaran@freshclass.com | 1995-03-04    | Female | Coach   | Chennai     | 9791836222 | Chitra@2022   | 2022-03-22 16:48:16 |
