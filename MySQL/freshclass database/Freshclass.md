@@ -1,3 +1,7 @@
+# PRESENTATION LINK
+https://docs.google.com/presentation/d/1zTatbGUNHZekhcOFCtggrjX_EUXkbxFFsEZe1Hbfxno/edit?usp=sharing
+
+* * *
 # freshclass-database
 
 ```sql
