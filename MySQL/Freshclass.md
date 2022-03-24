@@ -10,7 +10,7 @@ CREATE DATABASE freshclass;
 ## CREATE TABLE User
 
 ```sql
-CREATE TABLE user(Id int PRIMARY KEY Auto_increment,User_id char(6) UNIQUE NOT NULL,First_name varchar(100) NOT NULL,Last_name varchar(100) NOT NULL,Email varchar(255) NOT NULL UNIQUE,Date_of_birth date NOT NULL,Gender char(6) NOT NULL,Roll varchar(100) NOT NULL,City varchar(100) NOT NULL,Phone_no bigint NOT NULL,Password varchar(20) NOT NULL,Singup_Date timestamp default current_timestamp,check(Gender in ('Male','Female','Other')));
+CREATE TABLE user(Id int PRIMARY KEY Auto_increment,User_id char(6) UNIQUE NOT NULL,First_name varchar(100) NOT NULL,Last_name varchar(100) NOT NULL,Email varchar(255) NOT NULL UNIQUE,Date_of_birth date NOT NULL,Gender char(6) NOT NULL,Role varchar(100) NOT NULL,City varchar(100) NOT NULL,Phone_no bigint NOT NULL,Password varchar(20) NOT NULL,Singup_Date timestamp default current_timestamp,check(Gender in ('Male','Female','Other')));
 ```
 
 | Field         | Type         | Null | Key | Default           | Extra             |
@@ -22,7 +22,7 @@ CREATE TABLE user(Id int PRIMARY KEY Auto_increment,User_id char(6) UNIQUE NOT N
 | Email         | varchar(255) | NO   | UNI | NULL              |                   |
 | Date_of_birth | date         | NO   |     | NULL              |                   |
 | Gender        | char(6)      | NO   |     | NULL              |                   |
-| Roll          | varchar(100) | NO   |     | NULL              |                   |
+| Role          | varchar(100) | NO   |     | NULL              |                   |
 | City          | varchar(100) | NO   |     | NULL              |                   |
 | Phone_no      | bigint       | NO   |     | NULL              |                   |
 | Password      | varchar(20)  | NO   |     | NULL              |                   |
@@ -32,16 +32,16 @@ CREATE TABLE user(Id int PRIMARY KEY Auto_increment,User_id char(6) UNIQUE NOT N
 ### INSERT VALUE INTO User TABLE
 
 ```sql
-INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Roll,City,Phone_no,Password) VALUES(1,'A0001','Prasanna','Venkatesh','prasanna.vanekatesh@freshclass.com','2001-01-20','Male','Student','Thanjevur',9791836225,'Prasanna@2022');
+INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Role,City,Phone_no,Password) VALUES(1,'A0001','Prasanna','Venkatesh','prasanna.vanekatesh@freshclass.com','2001-01-20','Male','Student','Thanjevur',9791836225,'Prasanna@2022');
 ```
 ```sql
-INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Roll,City,Phone_no,Password) VALUES(2,'E0001','Chitra','Muthukumaran','chirta.muthukumaran@freshclass.com','1995-03-04','Female','Coach','Chennai',9791836222,'Chitra@2022');
+INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Role,City,Phone_no,Password) VALUES(2,'E0001','Chitra','Muthukumaran','chirta.muthukumaran@freshclass.com','1995-03-04','Female','Coach','Chennai',9791836222,'Chitra@2022');
 ```
 ```sql
-INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Roll,City,Phone_no,Password) VALUES(3,'A0002','Vimal','Raj','vimal.raj@freshclass.com','2002-06-05','Male','Student','Pondicherry',9791836332,'vimal@2022');
+INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Role,City,Phone_no,Password) VALUES(3,'A0002','Vimal','Raj','vimal.raj@freshclass.com','2002-06-05','Male','Student','Pondicherry',9791836332,'vimal@2022');
 ```
 ```sql
-INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Roll,City,Phone_no,Password) VALUES(4,'E0002','Prasanna','Bharathi','prasanna.bharathi@freshclass.com','2003-06-07','Female','coach','Chennai',9791834352,'Prasanna@2022');
+INSERT INTO user(Id,User_id,First_name,Last_name,Email,Date_of_birth,Gender,Role,City,Phone_no,Password) VALUES(4,'E0002','Prasanna','Bharathi','prasanna.bharathi@freshclass.com','2003-06-07','Female','coach','Chennai',9791834352,'Prasanna@2022');
 ```
 
 ### User table with values
@@ -100,10 +100,10 @@ CREATE TABLE Coaches(Id int PRIMARY KEY Auto_increment,User_id char(6) unique no
 ### INSERT VALUES INTO Coaches TABLE
 
 ```sql
-INSERT INTO Coaches(Id,User_id,Dept,Qualification,Position) VALUES(2,'E0001','Tech','12th','Head tech coach');
+INSERT INTO Coaches(Id,User_id,Dept,Qualification,Position) VALUES(2,'E0001','Tech','MCA','Head tech coach');
 ```
 ```sql
-INSERT INTO Coaches(Id,User_id,Dept,Qualification,Position) VALUES(4,'E0002','L&D','12th','Head coach');
+INSERT INTO Coaches(Id,User_id,Dept,Qualification,Position) VALUES(4,'E0002','L&D','B.E','Head coach');
 ```
 
 | Id | User_id | Dept | Qualification | Position        |
@@ -159,9 +159,7 @@ CREATE TABLE Assignment(Id int primary key auto_increment,
 ### INSERT VALUES INTO Assignment TABLE
 
 ```sql
-INSERT INTO Assignment(subject_name,Ass_name,dead_line) 
-VALUES('ELS','ELST2','2020-03-18'),
-      ('ELS','ELST3','2020-03-21');
+o
 ```
 
 | Id | Subject_name | Ass_name | Dead_line  | created_date        |
