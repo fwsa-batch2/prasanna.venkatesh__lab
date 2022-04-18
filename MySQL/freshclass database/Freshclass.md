@@ -164,7 +164,10 @@ CREATE TABLE Assignment(Id int primary key auto_increment,
 ### INSERT VALUES INTO Assignment TABLE
 
 ```sql
-o
+INSERT INTO Assignment(subject_name,Ass_name,dead_line)
+VALUES('ELS','ELST2','2020-03-18'),
+      ('ELS','ELST3','2020-03-21');
+
 ```
 
 | Id | Subject_name | Ass_name | Dead_line  | created_date        |
