@@ -688,6 +688,154 @@ public class basic{
     }
 ```
 
+## Find the given number is perfect number are not
+```java
+import java.util.Scanner;
+public class HelloWorld{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your number : ");
+        int n = in.nextInt();//6
+        int sum = 0;
+        for (int i = 1; i < n; i++){
+            if(n%i==0){
+                sum+=i;
+                System.out.println(sum);
 
+            }
+        }
+        if(sum==n){
+            System.out.println(n +" is perfect number");
+        }else{
+            System.out.println(n +" is not perfect number");
+            }
+         }
+     }
+```
+## Find odd even number in java
+```java
+import java.util.Scanner;
+public class test{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your number : ");
+        int num = in.nextInt();
+        if(num%2==0){
+            System.out.println(num + " is a odd number");
+        }else{
+            System.out.println(num + " is a even number");
+        }
+     }
+  }
+  ```
+  ## Sort the array value using for loop and if statement 
+  ```java
+import java.util.Arrays;
+public class test{
+    public static void main(String[] args){
+        int [] a = new int[]{1,8,10,90,88,45};
+        int temp;
+        System.out.println("Before sort : "+Arrays.toString(a));
+        for(int i=0; i<a.length; i++){
+            for(int j=i+1; j<a.length; j++){
+                if(a[i] > a[j]){
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        System.out.println("After sort : "+Arrays.toString(a));
 
+    }
+}
+```
+## Program to insert a element in a specific index of an array
+```java
+import java.util.Arrays;
+public class test{
+    public static void main(String[] args){
+        int [] a = new int[]{1,8,10,90,88,45};
+        int index = 3, value = 67;
+        System.out.println("Before insert : "+Arrays.toString(a));
+        for(int i=a.length-1; i>index; i--){
+              a[i] = a[i-1];
+        }
+        a[index] = value;
+        System.out.println("After insert : "+Arrays.toString(a));
 
+    }
+}
+```
+
+## Program to insert a element in a specific index of an array
+```java
+import java.util.Arrays;
+public class test{
+    public static void main(String[] args){
+        int [] a = new int[]{1,8,10,90,88,45};
+        int index = 3, value = 67;
+        System.out.println("Before insert : "+Arrays.toString(a));
+        for(int i=a.length-1; i>index; i--){
+              a[i] = a[i-1];
+        }
+        a[index] = value;
+        System.out.println("After insert : "+Arrays.toString(a));
+
+    }
+}
+```
+## Find duplicate element in an array using java
+```java
+import java.util.Arrays;
+public class test{
+    public static void main(String[] args){
+        int [] a = new int[]{1,8,10,20,10,45,1,90,88,45};
+        for(int i=0; i<a.length-1; i++){
+            for(int j=i+1; j<a.length; j++){
+                if(a[i] == a[j] && i!=j){
+                    System.out.println("dubicate element : "+a[j]);
+                }
+            }
+        }
+    }
+}
+```
+## Find duplicate element in an array using java
+```java
+import java.util.Arrays;
+public class test{
+    public static void main(String[] args){
+        int [] a = new int[]{1,8,10,20,10,45,1,90,88,45};
+        for(int i=0; i<a.length-1; i++){
+            for(int j=i+1; j<a.length; j++){
+                if(a[i] == a[j] && i!=j){
+                    System.out.println("dubicate element : "+a[j]);
+                }
+            }
+        }
+    }
+}
+```
+## Two Dimensional Arrays
+```java
+public class test{
+    public static void main(String[] args){
+        int [][] a = new int[][]{{1,8,10},{20,11,45},{1,90,88}};
+        System.out.println(a[0][1]);
+    }
+}
+```
+
+## Array
+```java
+public class test{
+    public static void main(String[] args){
+          int a[] = {10,20,30};
+          System.out.println(a[0]);
+          
+ 		int []b = new int[]{11,12,23,45};
+          System.out.println(b[1]);
+  }
+}
+```
