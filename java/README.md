@@ -688,154 +688,326 @@ public class basic{
     }
 ```
 
-## Find the given number is perfect number are not
-```java
-import java.util.Scanner;
-public class HelloWorld{
-    public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter your number : ");
-        int n = in.nextInt();//6
-        int sum = 0;
-        for (int i = 1; i < n; i++){
-            if(n%i==0){
-                sum+=i;
-                System.out.println(sum);
+## Write a Java method to compute the future investment value at a given interest rate for a specified number of years. Sample data (Monthly compounded) and Output, 
+Input the investment amount: 1000, Input the rate of interest: 10, Input number of years: 5
 
-            }
-        }
-        if(sum==n){
-            System.out.println(n +" is perfect number");
-        }else{
-            System.out.println(n +" is not perfect number");
-            }
-         }
-     }
-```
-## Find odd even number in java
+#### Expected Output:
+|Years  |  FutureValue|
+|------|------------|
+|1       |     1104.71|
+
 ```java
-import java.util.Scanner;
-public class test{
-    public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter your number : ");
-        int num = in.nextInt();
-        if(num%2==0){
-            System.out.println(num + " is a odd number");
-        }else{
-            System.out.println(num + " is a even number");
+import java.lang.Math;
+
+public class compounded {
+    public static void main(String[] args) {
+
+        int investmentAmount = 1000;
+        double monthlyInterestRate = 0.00833;
+        int years = 1;
+
+       double result = investmentAmount * Math.pow((1 + monthlyInterestRate), years * 12);
+        System.out.println(result);
+    }
+}
+```
+
+# Access modifier
+```java
+package com.fwsa;
+import java.lang.String;
+
+    class parent {
+        private int atm = 1234;
+        String name = "mukil";
+        protected String gen = "m";
+        
+        private int atmpin(){
+            return atm;
         }
-     }
-  }
+
+        String na(){
+            return name;
+        }
+
+        public String gender(){
+            return gen;
+        }
+
+        public static void main(String args[]){
+            parent obj = new parent();
+
+            System.out.println(obj.atmpin());
+            System.out.println(obj.na());
+            System.out.println(obj.gender());
+        }
+    }
   ```
-  ## Sort the array value using for loop and if statement 
-  ```java
-import java.util.Arrays;
-public class test{
-    public static void main(String[] args){
-        int [] a = new int[]{1,8,10,90,88,45};
-        int temp;
-        System.out.println("Before sort : "+Arrays.toString(a));
-        for(int i=0; i<a.length; i++){
-            for(int j=i+1; j<a.length; j++){
-                if(a[i] > a[j]){
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
-        }
-        System.out.println("After sort : "+Arrays.toString(a));
 
+# OOPS
+
+## Java single Inheritance
+```java
+package com.fwsa;
+public class madhan {
+    public void number(){
+        System.out.println("9791836225");
     }
 }
-```
-## Program to insert a element in a specific index of an array
-```java
-import java.util.Arrays;
-public class test{
-    public static void main(String[] args){
-        int [] a = new int[]{1,8,10,90,88,45};
-        int index = 3, value = 67;
-        System.out.println("Before insert : "+Arrays.toString(a));
-        for(int i=a.length-1; i>index; i--){
-              a[i] = a[i-1];
-        }
-        a[index] = value;
-        System.out.println("After insert : "+Arrays.toString(a));
 
+class mukil extends madhan{
+    public void name(){
+        System.out.println("Hello i am mukil");
+    }
+
+    public static void main(String args[]){
+        mukil obj = new mukil();
+        obj.number();
+        obj.name();
     }
 }
 ```
 
-## Program to insert a element in a specific index of an array
+## Java multilevel Inheritance
 ```java
-import java.util.Arrays;
-public class test{
-    public static void main(String[] args){
-        int [] a = new int[]{1,8,10,90,88,45};
-        int index = 3, value = 67;
-        System.out.println("Before insert : "+Arrays.toString(a));
-        for(int i=a.length-1; i>index; i--){
-              a[i] = a[i-1];
-        }
-        a[index] = value;
-        System.out.println("After insert : "+Arrays.toString(a));
+package com.fwsa;
 
+public class madhan {
+
+    public void number(){
+        System.out.println("9791836225");
     }
 }
-```
-## Find duplicate element in an array using java
-```java
-import java.util.Arrays;
-public class test{
-    public static void main(String[] args){
-        int [] a = new int[]{1,8,10,20,10,45,1,90,88,45};
-        for(int i=0; i<a.length-1; i++){
-            for(int j=i+1; j<a.length; j++){
-                if(a[i] == a[j] && i!=j){
-                    System.out.println("dubicate element : "+a[j]);
-                }
-            }
-        }
+
+class mukil extends madhan{
+    public void from(){
+        System.out.println("Hello i am from thanjavur");
     }
 }
-```
-## Find duplicate element in an array using java
-```java
-import java.util.Arrays;
-public class test{
-    public static void main(String[] args){
-        int [] a = new int[]{1,8,10,20,10,45,1,90,88,45};
-        for(int i=0; i<a.length-1; i++){
-            for(int j=i+1; j<a.length; j++){
-                if(a[i] == a[j] && i!=j){
-                    System.out.println("dubicate element : "+a[j]);
-                }
-            }
-        }
+
+class prasanna extends mukil{
+    public void name(){
+        System.out.println("Hello I am prasanna");
     }
-}
-```
-## Two Dimensional Arrays
-```java
-public class test{
-    public static void main(String[] args){
-        int [][] a = new int[][]{{1,8,10},{20,11,45},{1,90,88}};
-        System.out.println(a[0][1]);
+
+    public static void main(String args[]){
+        prasanna obj = new prasanna();
+        obj.number();
+        obj.name();
+        obj.from();
     }
 }
 ```
 
-## Array
+## super Keyword in Inheritance
 ```java
-public class test{
-    public static void main(String[] args){
-          int a[] = {10,20,30};
-          System.out.println(a[0]);
-          
- 		int []b = new int[]{11,12,23,45};
-          System.out.println(b[1]);
-  }
+package com.fwsa;
+
+public class madhan {
+
+    public void number(){
+        System.out.println("9791836225");
+    }
+    public void name(){
+        System.out.println("Hello I am madhan");
+    }
+}
+
+class mukil extends madhan{
+    public void from(){
+        System.out.println("Hello i am from thanjavur");
+    }
+}
+
+class prasanna extends mukil{
+    public void name(){
+        System.out.println("Hello I am prasanna");
+    }
+    public void from(){
+        super.from();
+        System.out.println("Hello i am from chennai");
+    }
+
+    public static void main(String args[]){
+        prasanna obj = new prasanna();
+        obj.number();
+        obj.name();
+        obj.from();
+    }
+}
+```
+
+## Java Abstract Class and Abstract Methods
+```java
+package com.fwsa;
+abstract class madhan {
+
+    abstract void number();
+    public void name(){
+        System.out.println("Hello I am madhan");
+    }
+}
+
+class mukil extends madhan{
+    public void number(){
+        System.out.println("My number is 9791836225");
+    }
+
+    public static void main(String args[]){
+        mukil obj = new mukil();
+        obj.number();
+        obj.name();
+    }
+}
+```
+
+## Java Interface
+
+```java
+package com.prasanna;
+
+interface sathish {
+    void relationship();
+    void meeting();
+}
+
+class Keerthi implements sathish {
+    @Override
+    public void relationship() {
+        System.out.println("we are friends");
+    }
+
+    public void meeting(){
+        System.out.println("we meat in college");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Keerthi obj = new Keerthi();
+        obj.relationship();
+        obj.meeting();
+    }
+}
+```
+
+## Multi interface
+```java
+package com.prasanna;
+
+interface sathish {
+    void relationship();
+    void meeting();
+}
+
+interface santhosh {
+    void number();
+    void name();
+}
+
+class Keerthi implements sathish, santhosh {
+    @Override
+    public void relationship() {
+        System.out.println("we are friends");
+    }
+
+    public void meeting(){
+        System.out.println("we meat in college");
+    }
+
+    public void number(){
+        System.out.println("My number is 9791836225");
+    }
+
+    public void name(){
+        System.out.println("My name is Prasanna");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Keerthi obj = new Keerthi();
+        obj.relationship();
+        obj.meeting();
+        obj.name();
+        obj.number();
+    }
+}
+```
+
+## Java Polymorphism overriding
+```java
+package com.fwsa;
+
+public class poly {
+    public void Coffee() {
+        System.out.println("Coffee is too hot");
+    }
+}
+
+class curd extends poly {
+    public void Coffee() {
+        System.out.println("Coffee is too cool");
+    }
+
+    public static void main(String args[]) {
+        poly obj1 = new poly();
+        curd obj = new curd();
+        obj1.Coffee();
+        obj.Coffee();
+    }
+}
+```
+
+## Java Polymorphism Method Overloading
+```java
+package com.fwsa;
+
+public class poly {
+    public int Coffee( int number) {
+        System.out.println("My number is " + number );
+        return number;
+    }
+
+
+    public String Coffee(String name) {
+        System.out.println("My name is " + name );
+        return name;
+    }
+
+    public static void main(String args[]) {
+        poly obj1 = new poly();
+        obj1.Coffee(1836);
+    }
+}
+```
+
+## Java Encapsulation
+```java
+package com.fwsa;
+import java.lang.String;
+
+public class userdata {
+    protected int phonenumber;
+    private String name;
+
+    public int setnumber(int phonenumber) {
+        return phonenumber;
+    }
+
+    public String getna(){
+        return name;
+    }
+
+    public void setna(String name){
+        this.name = name;
+    }
+
+    public static void main(String args[]){
+        userdata obj = new userdata();
+        obj.setna("Sam");
+
+        System.out.println(obj.setnumber(1234567890) + " " + obj.getna());
+    }
 }
 ```
