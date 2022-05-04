@@ -1011,3 +1011,32 @@ public class userdata {
     }
 }
 ```
+
+## Boxing
+
+```java
+public class Solution {
+
+    public static void main(String[] args){
+        int a = 10;
+        Integer obj1 = Integer.valueOf(a);
+        Integer obj2 = a;
+        System.out.print(obj2);
+    }
+}
+```
+
+## Unboxing
+
+```java
+public class Solution {
+
+    public static void main(String[] args){
+        Integer obj1 = Integer.valueOf(10);
+        int a = obj1.Intvalue();
+        int b = obj1;
+        System.out.print(a);
+    }
+}
+```
+
