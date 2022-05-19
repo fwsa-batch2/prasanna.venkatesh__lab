@@ -786,8 +786,60 @@ public class string {
 ```Queue```
 ```Map```
 ## List
-```ArrayList``````LinkedList``````Vector``````Stack```
+```ArrayList```
+```LinkedList```
+```Vector```
+```Stack```
+## ArrayList
 ```java
+package com.collections;
+import java.util.*;
+public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>(); //Create ArrayList
+
+        // Add elements to ArrayList
+        arrayList.add("Java");
+        arrayList.add("Python");
+        arrayList.add("Swift");
+        System.out.println("ArraYList" + arrayList);
+
+        String get = arrayList.get(1);
+        System.out.println(get); //get arraylist
+
+        arrayList.set(2, "JavaScript"); //change element in index 2
+
+        arrayList.remove(2);//remove element in index 2
+    }
+}
+```
+
+## LinkedList
+```java
+package com.collections;
+
+import java.util.LinkedList;
+
+public class linkedlist {
+    public static void main(String[] args) {
+        LinkedList<String> link = new LinkedList<>();
+
+        link.add("Prasanna");
+        link.addFirst("p");
+        link.addLast("Venkatesh");
+
+        link.remove("Prasanna");
+        link.remove(1);
+        link.removeLast();
+        link.removeFirst();
+
+        link.set(1, "Prasanna");
+
+        link.get(2);
+    }
+}
+```
+
 
 # OOPS
 
