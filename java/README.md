@@ -839,6 +839,32 @@ public class linkedlist {
     }
 }
 ```
+## Vector
+```java
+package com.collections;
+
+import java.util.Vector;
+
+public class vector {
+    public static void main(String[] args) {
+        Vector<String> vect = new Vector<>();
+        vect.add("Dog");
+        vect.add("Horse");
+        vect.add("Cat");
+
+        System.out.println("Initial Vector: " + vect);
+
+        // Using remove()
+        String element = vect.remove(1);
+        System.out.println("Removed Element: " + element);
+        System.out.println("New Vector: " + vect);
+
+        // Using clear()
+        vect.clear();
+        System.out.println("Vector after clear(): " + vect);
+    }
+}
+```
 
 
 # OOPS
