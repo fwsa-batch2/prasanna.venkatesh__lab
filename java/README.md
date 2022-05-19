@@ -743,6 +743,26 @@ import java.lang.String;
         }
     }
   ```
+  
+ # Array
+ ```java
+ package com.fwsa;
+
+public class array {
+    public static void main(String[] args) {
+        int[] a = {1,2,3,4,5}; //array
+
+        int[][] a = {
+                {1, 2, 3},
+                {4, 5, 6, 9},
+                {7},
+        };// Multidimensional array
+
+        int [] a = {1, 2, 3, 4, 5, 6};
+        int [] b = a;// copy array
+    }
+}
+```
 
 # OOPS
 
