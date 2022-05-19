@@ -764,6 +764,30 @@ public class array {
 }
 ```
 
+# String & Stringbuffer & Stringbuilder
+```java
+package com.fwsa;
+
+public class string {
+    public static void main(String[] args) {
+        String a = "Prasanna"; //String
+
+        StringBuffer buffer = new StringBuffer("Prasanna");
+        buffer.append("venkatesh"); //Stringbuffer
+
+        StringBuilder builder = new StringBuilder("Prasanna");
+        builder.append("Venkatesh"); //Stringbuilder
+    }
+}
+```
+# Collections
+```list```
+```Set```
+```Queue```
+```Map```
+## List
+```java
+
 # OOPS
 
 ## Java single Inheritance
