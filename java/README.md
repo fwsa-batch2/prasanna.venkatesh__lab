@@ -866,6 +866,29 @@ public class vector {
 }
 ```
 
+## Stack
+```java
+package com.collections;
+
+import java.util.Stack;
+
+public class stack {
+    public static void main(String[] args) {
+        Stack<String> lang = new Stack<>();
+
+        lang.push("Java");
+        lang.push("Javascript");//add element
+
+        lang.pop();//remove last element
+
+        lang.peek();//access last element
+
+        lang.search("Java");//Search than element
+
+        lang.empty();//boolean result is that Stack is empty is shows true otherwise false
+    }
+}
+```
 
 # OOPS
 
