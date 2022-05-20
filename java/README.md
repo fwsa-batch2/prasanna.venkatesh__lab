@@ -938,7 +938,41 @@ public class hashset {
 }
 ```
 
-### numSet
+### EnumSet
+```java
+package com.collections;
+import java.util.EnumSet;
+
+public class enumset {
+    enum size{
+        x,l,m,xl,xxl,xxxl,xxxxl
+    }
+
+    public static void main(String[] args) {
+
+        // Creating an EnumSet using allOf()
+        EnumSet<size> sizes = EnumSet.allOf(size.class);
+
+        System.out.println("EnumSet: " + sizes);
+
+        // Creating an EnumSet using noneOf()
+        EnumSet<size> sizes = EnumSet.noneOf(size.class);
+
+        System.out.println("Empty EnumSet: " + sizes);
+
+        // Creating an EnumSet using range()
+        EnumSet<size> sizes2 = EnumSet.range(size.xxl, size.xxxxl);
+
+        System.out.println("EnumSet: " + sizes2);
+
+        // Using of() with a single parameter
+        EnumSet<size> sizes1 = EnumSet.of(size.MEDIUM);
+
+        System.out.println("EnumSet1: " + sizes1);
+    }
+}
+```
+
 ### LinkedhashSet
 ### SortedSet
 ### NavigableSet
