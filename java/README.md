@@ -790,7 +790,7 @@ public class string {
 ```LinkedList```
 ```Vector```
 ```Stack```
-## ArrayList
+### ArrayList
 ```java
 package com.collections;
 import java.util.*;
@@ -814,7 +814,7 @@ public class Arraylist {
 }
 ```
 
-## LinkedList
+### LinkedList
 ```java
 package com.collections;
 
@@ -839,7 +839,7 @@ public class linkedlist {
     }
 }
 ```
-## Vector
+### Vector
 ```java
 package com.collections;
 
@@ -866,7 +866,7 @@ public class vector {
 }
 ```
 
-## Stack
+### Stack
 ```java
 package com.collections;
 
@@ -886,6 +886,54 @@ public class stack {
         lang.search("Java");//Search than element
 
         lang.empty();//boolean result is that Stack is empty is shows true otherwise false
+    }
+}
+```
+## Set
+```HashSet```
+```EnumSet```
+```LinkedhashSet```
+```SortedSet```
+```NavigableSet```
+```TreeSet```
+
+```java
+package com.collections;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class hashset {
+    public static void main(String[] args) {
+        HashSet<String> name = new HashSet<>();
+
+        name.add("Prasanna");
+        name.add("Sam");
+        name.add("Mukil");
+        System.out.println("Name list: " + name);
+
+        HashSet<String> allName = new HashSet<>();
+
+        // Using addAll() method
+        allName.addAll(name);
+        allName.add("Palani");
+        System.out.println("New HashSet: " + allName);
+
+        // Calling iterator() method
+        Iterator<String> iterate = allName.iterator();
+        System.out.print("HashSet using Iterator: ");
+        // Accessing elements
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+
+        // Using remove() method
+        boolean value1 = allName.remove(2);
+        System.out.println("Is 2 removed? " + value1);
+
+        boolean value2 = allName.removeAll(allName);
+        System.out.println("Are all elements removed? " + value2);
     }
 }
 ```
