@@ -974,6 +974,59 @@ public class enumset {
 ```
 
 ### LinkedhashSet
+```java
+package com.collections;
+
+import java.util.*;
+
+public class linkedhashmap {
+    public static void main(String[] args) {
+        ArrayList<Integer> evenNumbers = new ArrayList<>();
+        evenNumbers.add(2);
+        evenNumbers.add(4);
+        System.out.println("ArrayList: " + evenNumbers);
+
+        // Creating a LinkedHashSet from an ArrayList
+        LinkedHashSet<Integer> numbers = new LinkedHashSet<>(evenNumbers);
+        System.out.println("LinkedHashSet: " + numbers);
+
+        LinkedHashSet<Integer> evenNumber = new LinkedHashSet<>();
+
+        // Using add() method
+        evenNumber.add(2);
+        evenNumber.add(4);
+        evenNumber.add(6);
+        System.out.println("LinkedHashSet: " + evenNumber);
+
+        LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
+
+        // Using addAll() method
+        numbers.addAll(evenNumber);
+        numbers.add(5);
+        System.out.println("New LinkedHashSet: " + numbers);
+
+        // Calling the iterator() method
+        Iterator<Integer> iterate = numbers.iterator();
+
+        System.out.print("LinkedHashSet using Iterator: ");
+
+        // Accessing elements
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+
+        // Using the remove() method
+        boolean value1 = numbers.remove(5);
+        System.out.println("Is 5 removed? " + value1);
+
+        boolean value2 = numbers.removeAll(numbers);
+        System.out.println("Are all elements removed? " + value2);
+
+    }
+}
+```
+
 ### SortedSet
 ### NavigableSet
 ### TreeSet
