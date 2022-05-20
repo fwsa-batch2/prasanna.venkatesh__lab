@@ -938,6 +938,12 @@ public class hashset {
 }
 ```
 
+### numSet
+### LinkedhashSet
+### SortedSet
+### NavigableSet
+### TreeSet
+
 # OOPS
 
 ## Java single Inheritance
