@@ -896,7 +896,7 @@ public class stack {
 ```SortedSet```
 ```NavigableSet```
 ```TreeSet```
-
+### HashSet
 ```java
 package com.collections;
 
