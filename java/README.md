@@ -743,6 +743,359 @@ import java.lang.String;
         }
     }
   ```
+  
+ # Array
+ ```java
+ package com.fwsa;
+
+public class array {
+    public static void main(String[] args) {
+        int[] a = {1,2,3,4,5}; //array
+
+        int[][] a = {
+                {1, 2, 3},
+                {4, 5, 6, 9},
+                {7},
+        };// Multidimensional array
+
+        int [] a = {1, 2, 3, 4, 5, 6};
+        int [] b = a;// copy array
+    }
+}
+```
+
+# String & Stringbuffer & Stringbuilder
+```java
+package com.fwsa;
+
+public class string {
+    public static void main(String[] args) {
+        String a = "Prasanna"; //String
+
+        StringBuffer buffer = new StringBuffer("Prasanna");
+        buffer.append("venkatesh"); //Stringbuffer
+
+        StringBuilder builder = new StringBuilder("Prasanna");
+        builder.append("Venkatesh"); //Stringbuilder
+    }
+}
+```
+# Collections
+```list```
+```Set```
+```Queue```
+```Map```
+## List
+```ArrayList```
+```LinkedList```
+```Vector```
+```Stack```
+### ArrayList
+```java
+package com.collections;
+import java.util.*;
+public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>(); //Create ArrayList
+
+        // Add elements to ArrayList
+        arrayList.add("Java");
+        arrayList.add("Python");
+        arrayList.add("Swift");
+        System.out.println("ArraYList" + arrayList);
+
+        String get = arrayList.get(1);
+        System.out.println(get); //get arraylist
+
+        arrayList.set(2, "JavaScript"); //change element in index 2
+
+        arrayList.remove(2);//remove element in index 2
+    }
+}
+```
+
+### LinkedList
+```java
+package com.collections;
+
+import java.util.LinkedList;
+
+public class linkedlist {
+    public static void main(String[] args) {
+        LinkedList<String> link = new LinkedList<>();
+
+        link.add("Prasanna");
+        link.addFirst("p");
+        link.addLast("Venkatesh");
+
+        link.remove("Prasanna");
+        link.remove(1);
+        link.removeLast();
+        link.removeFirst();
+
+        link.set(1, "Prasanna");
+
+        link.get(2);
+    }
+}
+```
+### Vector
+```java
+package com.collections;
+
+import java.util.Vector;
+
+public class vector {
+    public static void main(String[] args) {
+        Vector<String> vect = new Vector<>();
+        vect.add("Dog");
+        vect.add("Horse");
+        vect.add("Cat");
+
+        System.out.println("Initial Vector: " + vect);
+
+        // Using remove()
+        String element = vect.remove(1);
+        System.out.println("Removed Element: " + element);
+        System.out.println("New Vector: " + vect);
+
+        // Using clear()
+        vect.clear();
+        System.out.println("Vector after clear(): " + vect);
+    }
+}
+```
+
+### Stack
+```java
+package com.collections;
+
+import java.util.Stack;
+
+public class stack {
+    public static void main(String[] args) {
+        Stack<String> lang = new Stack<>();
+
+        lang.push("Java");
+        lang.push("Javascript");//add element
+
+        lang.pop();//remove last element
+
+        lang.peek();//access last element
+
+        lang.search("Java");//Search than element
+
+        lang.empty();//boolean result is that Stack is empty is shows true otherwise false
+    }
+}
+```
+## Set
+```HashSet```
+```EnumSet```
+```LinkedhashSet```
+```SortedSet```
+```NavigableSet```
+```TreeSet```
+### HashSet
+```java
+package com.collections;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class hashset {
+    public static void main(String[] args) {
+        HashSet<String> name = new HashSet<>();
+
+        name.add("Prasanna");
+        name.add("Sam");
+        name.add("Mukil");
+        System.out.println("Name list: " + name);
+
+        HashSet<String> allName = new HashSet<>();
+
+        // Using addAll() method
+        allName.addAll(name);
+        allName.add("Palani");
+        System.out.println("New HashSet: " + allName);
+
+        // Calling iterator() method
+        Iterator<String> iterate = allName.iterator();
+        System.out.print("HashSet using Iterator: ");
+        // Accessing elements
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+
+        // Using remove() method
+        boolean value1 = allName.remove(2);
+        System.out.println("Is 2 removed? " + value1);
+
+        boolean value2 = allName.removeAll(allName);
+        System.out.println("Are all elements removed? " + value2);
+    }
+}
+```
+
+### EnumSet
+```java
+package com.collections;
+import java.util.EnumSet;
+
+public class enumset {
+    enum size{
+        x,l,m,xl,xxl,xxxl,xxxxl
+    }
+
+    public static void main(String[] args) {
+
+        // Creating an EnumSet using allOf()
+        EnumSet<size> sizes = EnumSet.allOf(size.class);
+
+        System.out.println("EnumSet: " + sizes);
+
+        // Creating an EnumSet using noneOf()
+        EnumSet<size> sizes = EnumSet.noneOf(size.class);
+
+        System.out.println("Empty EnumSet: " + sizes);
+
+        // Creating an EnumSet using range()
+        EnumSet<size> sizes2 = EnumSet.range(size.xxl, size.xxxxl);
+
+        System.out.println("EnumSet: " + sizes2);
+
+        // Using of() with a single parameter
+        EnumSet<size> sizes1 = EnumSet.of(size.MEDIUM);
+
+        System.out.println("EnumSet1: " + sizes1);
+    }
+}
+```
+
+### LinkedhashSet
+```java
+package com.collections;
+
+import java.util.*;
+
+public class linkedhashmap {
+    public static void main(String[] args) {
+        ArrayList<Integer> evenNumbers = new ArrayList<>();
+        evenNumbers.add(2);
+        evenNumbers.add(4);
+        System.out.println("ArrayList: " + evenNumbers);
+
+        // Creating a LinkedHashSet from an ArrayList
+        LinkedHashSet<Integer> numbers = new LinkedHashSet<>(evenNumbers);
+        System.out.println("LinkedHashSet: " + numbers);
+
+        LinkedHashSet<Integer> evenNumber = new LinkedHashSet<>();
+
+        // Using add() method
+        evenNumber.add(2);
+        evenNumber.add(4);
+        evenNumber.add(6);
+        System.out.println("LinkedHashSet: " + evenNumber);
+
+        LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
+
+        // Using addAll() method
+        numbers.addAll(evenNumber);
+        numbers.add(5);
+        System.out.println("New LinkedHashSet: " + numbers);
+
+        // Calling the iterator() method
+        Iterator<Integer> iterate = numbers.iterator();
+
+        System.out.print("LinkedHashSet using Iterator: ");
+
+        // Accessing elements
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+
+        // Using the remove() method
+        boolean value1 = numbers.remove(5);
+        System.out.println("Is 5 removed? " + value1);
+
+        boolean value2 = numbers.removeAll(numbers);
+        System.out.println("Are all elements removed? " + value2);
+
+    }
+}
+```
+
+### SortedSet
+```java
+package com.collections;
+
+import java.util.*;
+
+public class sortedet {
+    public static void main(String[] args) {
+        // Creating SortedSet using the TreeSet
+        SortedSet<Integer> numbers = new TreeSet<>();
+
+        // Insert elements to the set
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        System.out.println("SortedSet: " + numbers);
+
+        // Access the element
+        int firstNumber = numbers.first();
+        System.out.println("First Number: " + firstNumber);
+
+        int lastNumber = numbers.last();
+        System.out.println("Last Number: " + lastNumber);
+
+        // Remove elements
+        boolean result = numbers.remove(2);
+        System.out.println("Is the number 2 removed? " + result);
+    }
+}
+```
+### NavigableSet
+```java
+package com.collections;
+import java.util.*;
+
+public class navigableset {
+    public static void main(String[] args) {
+        // Creating NavigableSet using the TreeSet
+        NavigableSet<Integer> numbers = new TreeSet<>();
+
+        // Insert elements to the set
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        System.out.println("NavigableSet: " + numbers);
+
+        // Access the first element
+        int firstElement = numbers.first();
+        System.out.println("First Number: " + firstElement);
+
+        // Access the last element
+        int lastElement = numbers.last();
+        System.out.println("Last Element: " + lastElement);
+
+        // Remove the first element
+        int number1 = numbers.pollFirst();
+        System.out.println("Removed First Element: " + number1);
+
+        // Remove the last element
+        int number2 = numbers.pollLast();
+        System.out.println("Removed Last Element: " + number2);
+    }
+}
+```
+
+### TreeSet
+```java
+
 
 # OOPS
 
@@ -1011,3 +1364,32 @@ public class userdata {
     }
 }
 ```
+
+## Boxing
+
+```java
+public class Solution {
+
+    public static void main(String[] args){
+        int a = 10;
+        Integer obj1 = Integer.valueOf(a);
+        Integer obj2 = a;
+        System.out.print(obj2);
+    }
+}
+```
+
+## Unboxing
+
+```java
+public class Solution {
+
+    public static void main(String[] args){
+        Integer obj1 = Integer.valueOf(10);
+        int a = obj1.Intvalue();
+        int b = obj1;
+        System.out.print(a);
+    }
+}
+```
+
