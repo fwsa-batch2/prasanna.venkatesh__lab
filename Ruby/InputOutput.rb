@@ -1,3 +1,3 @@
 puts "Enter your name :"
-name = gets
+name = gets 
 puts("Hello " + name)
