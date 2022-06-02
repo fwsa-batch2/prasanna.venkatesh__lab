@@ -1,10 +1,19 @@
 module Prasanna
-        def man(name)
+        def hi(name)
             @name = name
-            puts "hi #@name"
+            puts "Hi #@name"
+        end
+        def bye(name)
+            @name = name
+            puts "Bye #@name"
         end
 end
 
 include Prasanna
-@hiName = gets
-Prasanna.man(@hiName)
+@hiName = gets.chomp()
+@whatSta = gets.chomp()
+if @whatSta == "hi" or @whatSta == "Hi"
+Prasanna.hi(@hiName)
+elsif @whatSta == "bye" or @whatSta == "Bye"
+Prasanna.bye(@hiName)
+end
