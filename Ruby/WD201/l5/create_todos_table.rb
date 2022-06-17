@@ -1,8 +1,6 @@
 require './connect_db.rb'
+require './todo.rb'
 connect_db!
-
-ActiveRecord::Migration.create_table(:todos) do |t|
-  t.column :todo_text, :text
-  t.column :due_date, :date
-  t.column :completed, :bool  
-end
+Todo.create!(todo_text: "Buy groceries", due_date: Date.today + 4, completed: false)
+Todo.create!(todo_text: "Call Acme Corp.", due_date: Date.today + 2, completed: true)
+Todo.create!(todo_text: "File taxes", due_date: Date.today, completed: false)

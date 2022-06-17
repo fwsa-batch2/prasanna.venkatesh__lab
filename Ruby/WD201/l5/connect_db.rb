@@ -3,9 +3,9 @@ require 'active_record'
 def connect_db!
   ActiveRecord::Base.establish_connection(
     host: 'localhost', 
-    adapter: 'postgresql',
+    adapter: 'mysql2',
     database: 'saas_db', 
-    user: 'root', 
+    username: 'root', 
     password: 'P.balaji2001'
   )
 end

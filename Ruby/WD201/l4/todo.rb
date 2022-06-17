@@ -26,8 +26,8 @@ class Todo
   end 
 
   def to_displayable_string
-    sym = (@completed) ? "[X]" : "[ ]"
-    return "#{sym} #{@text}"
+    sym = (@comp) ? "[X]" : "[ ]"
+    "#{sym} #{@text}"
   end
 end
 
@@ -54,10 +54,13 @@ class TodosList
 
   def to_displayable_list
     out = []   
-
-    @todos.map do |rec|
-      sym = (rec.comp) ? "[X]" : "[ ]"
-      out.push("#{sym} #{rec.text} #{rec.date}")
+    date = Date.today
+    @todos.each do |rec|
+      if rec.date == date
+        out.push("#{rec.to_displayable_string}")
+      else
+        out.push("#{rec.to_displayable_string} #{rec.date}")
+      end
     end
 
     return out 
