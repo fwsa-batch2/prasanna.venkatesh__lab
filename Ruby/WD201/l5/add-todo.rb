@@ -17,8 +17,10 @@ end
 
 connect_db!
 h = get_new_todo
+obj = Todo.new
+
 if h
-  new_todo = Todo.add_task(h)
+  new_todo = obj.add_task(h)
   puts "New todo created with id #{new_todo.id}"
-  Todo.show_list
+  obj.show_list
 end

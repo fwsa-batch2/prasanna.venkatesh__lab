@@ -79,7 +79,7 @@ todos = todos.map { |todo|
   Todo.new(todo[:text], todo[:due_date], todo[:completed])
 }
 
-todos_list = TodosList.new(todos)
+todos_list = TodosList.new(todos) 
 
 todos_list.add(Todo.new("Service vehicle", date, false))
 
